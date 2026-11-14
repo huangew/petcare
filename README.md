@@ -109,8 +109,8 @@ Use these credentials to log in as a business owner and test the Business Dashbo
 | ESLint | JavaScript code quality checks |
 | Prettier | Consistent code formatting |
 | Git & GitHub | Version control and team collaboration |
-| Mockaroo / generated sample data | Sample data generation for testing; final data source and import details: [PLACEHOLDER} |
-| Deployment platform | [PLACEHOLDER} |
+| Mockaroo | Sample data generation for testing |
+| Render | Deployment platform for production |
 
 ## Database
 
@@ -136,8 +136,6 @@ The design document identifies these items as outside the approved scope:
 - Online payment processing and billing.
 - Automated appointment reminders and messaging.
 - Veterinary diagnosis and medical record management.
-
-**Additional implementation limitations:** [PLACEHOLDER}
 
 ## Screenshots
 
@@ -243,7 +241,15 @@ cd frontend
 npm run build
 ```
 
-**Production deployment/build configuration:** [PLACEHOLDER}
+**Production deployment/build configuration:**
+
+- **Hosting platform:** Render
+- **Deployment branch:** `main`
+- **Frontend:** React with Vite
+- **Backend:** Node.js with Express
+- **Database:** MongoDB
+- **Live application:** [PetCare](https://petcare-g4f7.onrender.com/)
+- **Deployment configuration:** Managed by Joseph Sikowitz.
 
 ## Generative AI Usage
 
@@ -289,4 +295,6 @@ The following prompts were documented during PetCare development. AI-generated o
 
 ## License
 
-This project is intended to use the MIT License. See [LICENSE](LICENSE) if the license file is present in the repository. **License file verification:** [PLACEHOLDER}
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for the full license terms.
