@@ -1,3 +1,10 @@
+/*
+  Author: Joseph Sikowitz
+  November 2026
+
+  User login
+*/
+
 import "./UserLogin.css";
 
 import UserLoginForm from "../components/UserLoginForm.jsx";

@@ -1,3 +1,10 @@
+/*
+  Author: Joseph Sikowitz
+  November 2026
+
+  User register
+*/
+
 import "./UserRegister.css";
 
 import UserRegisterForm from "../components/UserRegisterForm.jsx";
