@@ -85,8 +85,8 @@ export default function PetEditModal({
         aria-modal="true"
         onClick={(e) => e.stopPropagation()}
       >
-          <h2>{title}</h2>
-          <p>{message}</p>
+        <h2>{title}</h2>
+        <p>{message}</p>
         <form onSubmit={handleSubmit}>
           <div className="modal-form-grid">
             <div className="modal-field">

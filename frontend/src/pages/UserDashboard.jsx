@@ -26,4 +26,4 @@ export default function UserDashboard() {
   );
 }
 
-UserDashboard.propTypes = {}
+UserDashboard.propTypes = {};

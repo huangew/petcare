@@ -13,4 +13,4 @@ export default function UserRegister() {
   );
 }
 
-UserRegisterForm.propTypes = {}
+UserRegisterForm.propTypes = {};
