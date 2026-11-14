@@ -61,9 +61,7 @@ function BusinessServiceViewOnly() {
         ))}
       </div>
 
-      {!error && filteredServices.length === 0 && (
-        <p>No services found.</p>
-      )}
+      {!error && filteredServices.length === 0 && <p>No services found.</p>}
     </main>
   );
 }
