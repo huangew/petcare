@@ -16,8 +16,8 @@ function HomePage() {
           <h1>Caring for your pets, one appointment at a time.</h1>
 
           <p>
-            Manage your pet profiles, explore pet care services, and keep
-            your pet information organized in one place.
+            Manage your pet profiles, explore pet care services, and keep your
+            pet information organized in one place.
           </p>
 
           <div className="home-actions">
@@ -35,10 +35,7 @@ function HomePage() {
         </div>
 
         <div className="home-image">
-          <img
-            src="/pets-home.jpg"
-            alt="A dog and cat sitting together"
-            />
+          <img src="/pets-home.jpg" alt="A dog and cat sitting together" />
         </div>
       </section>
     </main>

@@ -19,9 +19,7 @@ function Navbar() {
     location.pathname === "/business/dashboard" ||
     location.pathname === "/business";
 
-  const dashboardPath = isOwner
-    ? "/business/dashboard"
-    : "/user/dashboard";
+  const dashboardPath = isOwner ? "/business/dashboard" : "/user/dashboard";
 
   return (
     <header className="site-header">
@@ -62,6 +60,6 @@ function Navbar() {
   );
 }
 
-Navbar.propTypes = {}
+Navbar.propTypes = {};
 
 export default Navbar;
