@@ -119,14 +119,9 @@ BusinessServiceForm.propTypes = {
   editingId: PropTypes.string,
   formData: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    price: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ]).isRequired,
-    durationMinutes: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.number,
-    ]).isRequired,
+    price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    durationMinutes: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+      .isRequired,
     isActive: PropTypes.bool.isRequired,
     description: PropTypes.string.isRequired,
   }).isRequired,
