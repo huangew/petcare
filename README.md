@@ -57,24 +57,33 @@ The application supports business owners and clients. Owners manage business ser
 - Manage appointment information including customer, pet, service, date, time, status and notes.
 - Navigate between the business dashboard and personal profile with role-aware navigation.
 
-### Client Features (Joseph Sikowitz) To be updated by Joe.
+### Client Features (Joseph Sikowitz)
 
 - Register and log in to a user account.
+- User authentication.
 - View and edit account information.
 - Delete a user account.
 - Access a user dashboard/profile.
 - View available business services.
-- Maintain pet profiles, including searching for and deleting a pet profile, as described in the design document.
+- Maintain pet profiles, including searching for, adding, editing and deleting a pet profile, as described in the design document.
 
-## Accessing and Using the Client Interface (Joseph Sikowitz) To be updated by Joe
+## Accessing and Using the Client Interface (Joseph Sikowitz)
 
-1. Open the application and register a client account or log in to an existing account.
+1. Open the application and register a client account or log in to an existing account (see sample credentials below for an existing client).
 2. After login, the client is directed to `/user/dashboard`.
 3. Use the dashboard to view or update account information.
-4. Use **Services** to browse available services.
-5. **Pet profile workflow and any additional client instructions:** [PLACEHOLDER}
+4. From the dashboard, below the Profile, manage pets:
+  1. Add a pet using the "+ Add Pet" button.
+  2. Search through existing pets by name using the search bar.
+  3. Edit or delete pets using the buttons in each row in the pet table.
+5. Delete a user using the "Delete" button in the Profile or log out using the "Logout" button in the navbar.
+6. Use **Services** to browse available services.
 
-**Sample client credentials (if provided):** [PLACEHOLDER}
+**Sample client credentials (Demo Account):**
+- Username: **testuser**
+- Password: **testuser**
+
+Use these credentials to simulate a client's access to their account to add and manage pets and their profile.
 
 ## Accessing and Using the Business Owner Interface (Thai Ken Yong)
 
@@ -116,8 +125,8 @@ Use these credentials to log in as a business owner and test the Business Dashbo
 
 PetCare uses MongoDB for its application data. The design document identifies the following data types:
 
-- **Users:** User account and business owner information.
-- **Pets:** Client pet profile information.
+- **Users:** User account and business owner information (over 1,000 records).
+- **Pets:** Client pet profile information (over 1,000 records).
 - **Services:** Service descriptions, prices, durations, and active status.
 - **Appointments:** Customer and pet bookings, selected services, dates, times, and statuses.
 
@@ -159,17 +168,26 @@ The design document identifies these items as outside the approved scope:
 
 ### Client Interface (Joseph Sikowitz)
 
-#### User Registration and Login
+#### User Login
+![User Login](frontend/public/user-login.png)
 
-[PLACEHOLDER}
+#### User Registration
+![User Registration](frontend/public/user-registration.png)
 
-#### User Dashboard and Profile
+#### User Profile
+![User Profile](frontend/public/user-profile.png)
 
-[PLACEHOLDER}
+#### User Edit Account
+![User Edit Account](frontend/public/user-edit-account.png)
 
-#### Pet Profiles
+#### Pet Add
+![Pet Add](frontend/public/pet-add.png)
 
-[PLACEHOLDER}
+#### Pet Edit
+![Pet Edit](frontend/public/pet-edit.png)
+
+#### Pet Search
+![Pet Search](frontend/public/pet-search.png)
 
 ## Installation and Setup
 
@@ -291,7 +309,11 @@ The following prompts were documented during PetCare development. AI-generated o
 
 > Attached are the users collection, the pets collection and the services collection data file. The pets is linked to the user through the pets.user_id, which should match to the users._id. Help me to create 1200 of appointments for the appointments collection. The appointments collection will have the fields: user_id (This user_id can get from pets.user_id), pet_id (This can get from pets._id),  service_id (this can get from services._id), startTime, status (Scheduled, Completed, Cancelled), notes (Optional, but try to put in something that relevant to the appointment or the pet).Use realistic appointment dates between January 1, 2026, and December 31, 2027 and the business hours between 8:00 AM and 6:00 PM. Distribute appointments across different dates, times, customers, pets and services. Include a realistic mixture of appointment statuses such as scheduled, completed and cancelled but only if these match the application's supported status values. Ensure the selected pet belongs to the selected customer. Ensure the selected service exists in the MongoDB services collection. Use the existing customer, pet, and service IDs. Do not invent IDs or create invalid references. Avoid duplicate appointments and overlapping appointments for the same pet. Do not include _id, because MongoDB will generate it automatically. Save the results as a valid JSON file named petcare_appointments_1200.json.
 
-** Joe to add if needed **
+### Claude — Pet Sample Data Update
+> I want to assign each pet entry in MOCK_DATA_PETS.json an _id from a random user in MOCK_DATA_USERS.json. Each pet should only have one user id and the field should be called "user_id" in the pet entry. Do not make any changes to the user data nor the ID itself extracted from the users data. Show me a preview of the first 10 entries in the pets file before I tell you to edit all the entries and produce a new file.
+
+### Claude — Express Configuration for Render Deployment
+> How do I configure Express so that I can deploy a web service with Render? It is not working as it is currently configured.
 
 ## License
 
