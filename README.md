@@ -166,6 +166,22 @@ The design document identifies these items as outside the approved scope:
 
 ![Appointment Management](frontend/public/AppointmentManagement.png)
 
+#### Add New Service
+
+![Add New Service](frontend/public/AddService.png)
+
+#### Appointment Management
+
+![Appointment Management](frontend/public/AppointmentManagement.png)
+
+#### New Appointment
+
+![New Appointment](frontend/public/NewAppointment.png)
+
+#### Browse Services
+
+![Browse Services](frontend/public/BrowseService.png)
+
 ### Client Interface (Joseph Sikowitz)
 
 #### User Login
