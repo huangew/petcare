@@ -1,3 +1,10 @@
+/*
+  Author: Thai Ken Yong, Joseph Sikowitz
+  November 2026
+
+  Navigation Bar
+*/
+
 import { Link, useLocation } from "react-router";
 import { useUser } from "../context/UserContext.jsx";
 import "./Navbar.css";

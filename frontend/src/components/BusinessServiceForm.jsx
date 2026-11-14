@@ -6,6 +6,7 @@
 */
 
 import PropTypes from "prop-types";
+import "./BusinessServiceForm.css";
 
 function BusinessServiceForm({
   editingId,

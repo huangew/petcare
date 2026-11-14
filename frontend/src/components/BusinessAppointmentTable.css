@@ -1,0 +1,135 @@
+/*
+  Author: Thai Ken Yong
+  November 2026
+
+  Business Appointment Table CSS
+*/
+
+.appointments-table-card {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.appointments-table-heading h2 {
+  color: #23546f;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.appointments-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.appointments-table-heading h2 {
+  margin: 0;
+}
+
+.appointments-table-heading span {
+  color: #666;
+  font-size: 14px;
+}
+
+.appointments-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.appointments-table th {
+  background-color: #e7f3fa;
+  color: #23546f;
+  padding: 14px 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.appointments-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.appointments-table tbody tr:hover {
+  background-color: #fff6ef;
+}
+
+.appointments-name {
+  font-weight: 600;
+  color: #23546f;
+}
+
+.appointments-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.appointments-status.scheduled {
+  background-color: #e7f3fa;
+  color: #23546f;
+}
+
+.appointments-status.completed {
+  background-color: #e7f6ec;
+  color: #246b40;
+}
+
+.appointments-status.cancelled {
+  background-color: #f2f2f2;
+  color: #666;
+}
+
+.appointments-row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.appointments-empty {
+  text-align: center;
+  padding: 32px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .appointments-table-card {
+    padding: 16px;
+  }
+
+  .appointments-table {
+    min-width: 900px;
+  }
+}
+
+.appointments-btn-edit {
+  background-color: #e7f3fa;
+  color: #23546f;
+}
+
+.appointments-btn-edit:hover:not(:disabled) {
+  background-color: #d1e6f2;
+}
+
+.appointments-btn-delete {
+  background-color: #fce5dc;
+  color: #a33b24;
+}
+
+.appointments-btn-delete:hover:not(:disabled) {
+  background-color: #f5cbbb;
+}

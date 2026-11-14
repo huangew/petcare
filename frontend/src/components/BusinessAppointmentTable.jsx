@@ -6,6 +6,7 @@
 */
 
 import PropTypes from "prop-types";
+import "./BusinessAppointmentTable.css";
 
 function BusinessAppointmentTable({
   appointments,

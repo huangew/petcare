@@ -17,24 +17,24 @@ https://johnguerra.co/classes/webDevelopment_online_fall_2026/
 
 ## Public Deployment
 
-**Hosting Platform:** [PLACEHOLDER}  
-**Live Application:** [PLACEHOLDER}
+**Hosting Platform:** Render  
+**Live Application:** [PetCare](https://petcare-g4f7.onrender.com/)
 
 ## Design Document
 
 The PetCare design document describes the project, assumptions and constraints, user personas, user stories, technologies and design mockups.
 
 **Design Document:**  
-[PLACEHOLDER}
+[PetCare Design Document (PDF)](frontend/public/Project-3-PetCare-Design-Document-Yong-Sikowitz.pdf)
 
 ## Demo and Presentation Video
 
-**PetCare Demo Video:** [PLACEHOLDER}  
-**PetCare Presentation Video:** [PLACEHOLDER}
+**PetCare Demo Video:** [Watch Demo Video](https://youtu.be/GUTy0VvjnIA)  
+**PetCare Presentation Video:** [Watch Presentation Video](https://youtu.be/qswl08NvcC8)
 
 ## Presentation Slides
 
-**Presentation Slides:** [PLACEHOLDER}
+**Presentation Slides:** [View PetCare Presentation Slides](https://docs.google.com/presentation/d/1JJGz8EOYFUfjsnPHrAnJGrLH01ejaMYFDkn7NpUibws/edit?usp=sharing)
 
 ## Project Objective
 
@@ -84,7 +84,12 @@ The application supports business owners and clients. Owners manage business ser
 4. Choose **Manage Appointments** to create, view, update, delete or filter appointments.
 5. Use **Profile** in the navigation bar to access the owner's account information. Use **Dashboard** to return to the business landing page.
 
-**Sample owner credentials (if provided):** [PLACEHOLDER}
+**Sample Business Owner Credentials (Demo Account):**
+
+- **Username:** `ken`
+- **Password:** `ken`
+
+Use these credentials to log in as a business owner and test the Business Dashboard, Manage Services and Manage Appointments features.
 
 ## Technologies Used
 
@@ -113,14 +118,16 @@ PetCare uses MongoDB for its application data. The design document identifies th
 
 - **Users:** User account and business owner information.
 - **Pets:** Client pet profile information.
-- **Services:** Service descriptions, prices, durations and active status.
-- **Appointments:** Customer and pet bookings, selected services, dates, times and statuses.
+- **Services:** Service descriptions, prices, durations, and active status.
+- **Appointments:** Customer and pet bookings, selected services, dates, times, and statuses.
 
-**Exact collection names and database configuration:** [PLACEHOLDER}
+**Exact collection names and database configuration:**
 
-The business-side service and appointment collections support create, read, update and delete operations through Express API routes.
-
-**Record counts, import instructions, and count endpoints:** [PLACEHOLDER}
+- **Database name:** `petcare`
+- **Collection names:** `users`, `pets`, `services`, `appointments`
+- **Database system:** MongoDB
+- **Database driver:** Native MongoDB Node.js Driver (without Mongoose)
+- **Connection configuration:** Defined in the backend database connection code.
 
 ## Limitations
 
@@ -213,7 +220,7 @@ SESSION_SECRET="your-session-secret-here"
 
 ### 5. Start the Application
 
-**Backend start command:** [PLACEHOLDER}
+**Backend start command:**
 
 ```bash
 node backend.js

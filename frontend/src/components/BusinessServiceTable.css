@@ -1,0 +1,130 @@
+/*
+  Author: Thai Ken Yong
+  November 2026
+
+  Business Service Table CSS
+*/
+
+.services-table-card {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services-table-heading h2 {
+  color: #23546f;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.services-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.services-table-heading h2 {
+  margin: 0;
+}
+
+.services-table-heading span {
+  color: #666;
+  font-size: 14px;
+}
+
+.services-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.services-table th {
+  background-color: #e7f3fa;
+  color: #23546f;
+  padding: 14px 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.services-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.services-table tbody tr:hover {
+  background-color: #fff6ef;
+}
+
+.services-name {
+  font-weight: 600;
+  color: #23546f;
+}
+
+.services-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.services-status.active {
+  background-color: #e7f6ec;
+  color: #246b40;
+}
+
+.services-status.inactive {
+  background-color: #f2f2f2;
+  color: #666;
+}
+
+.services-row-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.services-btn-edit {
+  background-color: #e7f3fa;
+  color: #23546f;
+}
+
+.services-btn-edit:hover:not(:disabled) {
+  background-color: #d1e6f2;
+}
+
+.services-btn-delete {
+  background-color: #fce5dc;
+  color: #a33b24;
+}
+
+.services-btn-delete:hover:not(:disabled) {
+  background-color: #f5cbbb;
+}
+
+.services-empty {
+  text-align: center;
+  padding: 32px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .services-table-card {
+    padding: 16px;
+  }
+
+  .services-table {
+    min-width: 800px;
+  }
+}

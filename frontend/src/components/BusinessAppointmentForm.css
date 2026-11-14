@@ -1,0 +1,105 @@
+/*
+  Author: Thai Ken Yong
+  November 2026
+
+  Business Appointment Form CSS
+*/
+
+.appointments-form-card {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.appointments-form-card h2 {
+  color: #23546f;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.appointments-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.appointments-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.appointments-field label {
+  font-weight: 600;
+  color: #333;
+}
+
+.appointments-field input,
+.appointments-field select,
+.appointments-field textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  background-color: white;
+  color: #333;
+}
+
+.appointments-field input:focus,
+.appointments-field select:focus,
+.appointments-field textarea:focus {
+  outline: 2px solid #367fa6;
+  outline-offset: 1px;
+}
+
+.appointments-full-width {
+  grid-column: 1 / -1;
+}
+
+.appointments-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.appointments-search-results {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.appointments-search-option {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  background-color: white;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.appointments-search-option:hover {
+  background-color: #e7f3fa;
+}
+
+@media (max-width: 768px) {
+  .appointments-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .appointments-full-width {
+    grid-column: auto;
+  }
+
+  .appointments-form-card {
+    padding: 16px;
+  }
+}

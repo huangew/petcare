@@ -1,4 +1,12 @@
+/*
+  Author: Thai Ken Yong
+  November 2026
+
+  Business Services - Services Table
+*/
+
 import PropTypes from "prop-types";
+import "./BusinessServiceTable.css";
 
 function BusinessServiceTable({ services, deletingId, onEdit, onDelete }) {
   return (

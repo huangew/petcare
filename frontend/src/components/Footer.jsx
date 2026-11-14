@@ -1,3 +1,9 @@
+/*
+  Author: Thai Ken Yong
+  November 2026
+
+  Footer
+*/
 import "./Footer.css";
 
 // Footer to be used for every page standardization

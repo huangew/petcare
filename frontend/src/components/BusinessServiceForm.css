@@ -1,0 +1,96 @@
+/*
+  Author: Thai Ken Yong
+  November 2026
+
+  Business Service Form CSS
+*/
+
+.services-form-card {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services-form-card h2 {
+  color: #23546f;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.services-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.services-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.services-field label {
+  font-weight: 600;
+  color: #333;
+}
+
+.services-field input:not([type="checkbox"]),
+.services-field textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  background-color: white;
+  color: #333;
+}
+
+.services-field input:focus,
+.services-field textarea:focus {
+  outline: 2px solid #367fa6;
+  outline-offset: 1px;
+}
+
+.services-full-width {
+  grid-column: 1 / -1;
+}
+
+.services-checkbox-field {
+  justify-content: center;
+}
+
+.services-checkbox-field label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.services-checkbox-field input {
+  width: 18px;
+  height: 18px;
+  accent-color: #367fa6;
+}
+
+.services-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .services-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-full-width {
+    grid-column: auto;
+  }
+
+  .services-form-card {
+    padding: 16px;
+  }
+}
