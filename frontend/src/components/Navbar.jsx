@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <header className="site-header">
       <nav className="navbar" aria-label="Main navigation">
-        <Link className="navbar-brand" to={dashboardPath}>
+        <Link className="navbar-brand" to="/">
           <span className="navbar-logo" aria-hidden="true">
             🐾
           </span>
