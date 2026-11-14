@@ -12,3 +12,5 @@ export default function UserLogin() {
     </main>
   );
 }
+
+UserLoginForm.propTypes = {}
